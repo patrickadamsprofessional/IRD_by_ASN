@@ -1,0 +1,9 @@
+# Ignore all .log files
+*.log
+
+# Ignore all files in temp folders anywhere
+temp/
+
+# Ignore compiled Python files
+__pycache__/
+*.py[cod]

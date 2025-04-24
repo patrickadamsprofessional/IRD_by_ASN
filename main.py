@@ -197,7 +197,7 @@ async def get_prefixes(
     # to return the desired empty structure { "ASN": [] }.
     final_command = (
         f"( {script_body} ) | "
-        f"jq -s '{{ {quoted_asn_key}: (map(.[{quoted_asn_key}] // []) | flatten) }}'"
+        f"jq -s '{{ {quoted_asn_key}: (map(.{quoted_asn_key}) | flatten) }}'"
     )
 
 

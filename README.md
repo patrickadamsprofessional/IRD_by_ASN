@@ -48,13 +48,13 @@ Before running the application, ensure the following are installed on your **Uni
 Use `uvicorn` to run the FastAPI application:
 
 ```bash
-uvicorn main:app --host 0.0.0.0 --port 8000
+uvicorn main:app --host 0.0.0.0 --port 4242
 ```
 
 For development, you can use the `--reload` flag to automatically restart the server when code changes are detected:
 
 ```bash
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
+uvicorn main:app --reload --host 0.0.0.0 --port 4242
 ```
 
 The API will be available at `http://localhost:8000` (or the appropriate IP/hostname if running on a different machine).
